@@ -1,0 +1,49 @@
+--------------------------------------
+Start compilation for Jenkins example:
+--------------------------------------
+SOURCE/main/main.c: In function ‘main’:
+SOURCE/main/main.c:19:17: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   19 |                 printf("State: No_init\n");
+      |                 ^~~~~~
+SOURCE/main/main.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include "..\APP\POWER\Validate_Power.h"
+  +++ |+#include <stdio.h>
+    3 | 
+SOURCE/main/main.c:19:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   19 |                 printf("State: No_init\n");
+      |                 ^~~~~~
+SOURCE/main/main.c:19:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+SOURCE/APP/MEAS/Measurement.c: In function ‘read_voltage’:
+SOURCE/APP/MEAS/Measurement.c:5:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    5 |     printf("Select voltage: ");
+      |     ^~~~~~
+SOURCE/APP/MEAS/Measurement.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "Measurement.h"
+  +++ |+#include <stdio.h>
+    2 | 
+SOURCE/APP/MEAS/Measurement.c:5:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    5 |     printf("Select voltage: ");
+      |     ^~~~~~
+SOURCE/APP/MEAS/Measurement.c:5:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+SOURCE/APP/MEAS/Measurement.c:6:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+    6 |     scanf("%f", &voltage);
+      |     ^~~~~
+SOURCE/APP/MEAS/Measurement.c:6:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+SOURCE/APP/MEAS/Measurement.c:6:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+SOURCE/APP/MEAS/Measurement.c:6:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+SOURCE/APP/MEAS/Measurement.c: In function ‘read_current’:
+SOURCE/APP/MEAS/Measurement.c:12:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   12 |     printf("Select current: ");
+      |     ^~~~~~
+SOURCE/APP/MEAS/Measurement.c:12:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+SOURCE/APP/MEAS/Measurement.c:13:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   13 |     scanf("%f", &current);
+      |     ^~~~~
+SOURCE/APP/MEAS/Measurement.c:13:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+Finish compilation
+--------------------------------------
+RESULTS ARE:
+WARNINGS: 8
+ERRORS: 0
+--------------------------------------
+COMPILING SUCCESSFUL!.
